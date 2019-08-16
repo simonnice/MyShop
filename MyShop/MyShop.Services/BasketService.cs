@@ -10,8 +10,8 @@ namespace MyShop.Services
 {
     public class BasketService : IBasketService
     {
-        private readonly IRepository<Product> productContext;
-        private readonly IRepository<Basket> basketContext;
+        IRepository<Product> productContext;
+        IRepository<Basket> basketContext;
 
         public const string BasketSessionName = "eCommerceBasket";
 
@@ -80,6 +80,7 @@ namespace MyShop.Services
                     ProductId = productId,
                     Quantity = 1
                 };
+                basket.BasketItems.Add(item);
             }
             else
             {
