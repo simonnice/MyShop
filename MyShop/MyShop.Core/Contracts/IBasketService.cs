@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Web;
 using MyShop.Core.ViewModels;
 
 namespace MyShop.Core.Contracts
@@ -10,7 +11,7 @@ namespace MyShop.Core.Contracts
 
         List<BasketItemViewModel> GetBasketItems(HttpContextBase httpContext);
 
-        BasketSummaryViewModel GetBasketSummary(HttpContext httpContext);
+        BasketSummaryViewModel GetBasketSummary(HttpContextBase httpContext);
 
     }
 }

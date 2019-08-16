@@ -13,7 +13,7 @@
         public BasketSummaryViewModel(int basketCount, decimal basketTotal)
         {
             this.BasketCount = basketCount;
-            this.BasketTotal = basketTotal
+            this.BasketTotal = basketTotal;
         }
     }
 }
