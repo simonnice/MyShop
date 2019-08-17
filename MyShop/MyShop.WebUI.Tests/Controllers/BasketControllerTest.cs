@@ -62,7 +62,7 @@ namespace MyShop.WebUI.Tests.Controllers
 
             var controller = new BasketController(basketService);
             var httpContext = new MockHttpContext();
-            httpContext.Request.Cookies.Add(new System.Web.HttpCookie("eCommerceBasket" {Value = basket.Id});
+            httpContext.Request.Cookies.Add(new System.Web.HttpCookie("eCommerceBasket") { Value = basket.Id });
 
             var result = controller.BasketSummary() as PartialViewResult;
             var basketSummary = (BasketSummaryViewModel) result.ViewData.Model;
