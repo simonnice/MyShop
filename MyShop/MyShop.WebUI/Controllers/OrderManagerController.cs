@@ -6,6 +6,7 @@ using MyShop.Services;
 
 namespace MyShop.WebUI.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class OrderManagerController : Controller
     {
         IOrderService orderService;
