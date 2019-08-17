@@ -66,9 +66,9 @@ namespace MyShop.WebUI.Controllers
             return RedirectToAction("Thankyou", new {OrderId = order.Id});
         }
 
-        public ActionResult ThankYou(string OrderId)
+        public ActionResult ThankYou(string orderId)
         {
-            ViewBag.OrderId = OrderId;
+            ViewBag.OrderId = orderId;
 
             return View();
         }
